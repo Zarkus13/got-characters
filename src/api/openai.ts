@@ -50,7 +50,7 @@ export const useFetchCharacterDescription = (characterName: string, fetch: boole
           messages: [
             {
               role: 'user',
-              content: `Si tu devais générer un portrait de ${characterName} de la série Game of Thrones, comment décrirais-tu l'image en anglais ? Détaille le possible et n'écris dans ta réponse que cette description, aucun texte d'introduction, ni de conclusion, et ne précise jamais dans la description qu'il s'agit de ${characterName}.`,
+              content: `Si tu devais générer un portrait de ${characterName} de la série Game of Thrones dans un style Disney/Pixar, comment décrirais-tu l'image en anglais ? Détaille le possible et n'écris dans ta réponse que cette description, aucun texte d'introduction, ni de conclusion, et ne précise jamais dans la description qu'il s'agit de ${characterName}.`,
             },
           ],
           model: 'gpt-4-1106-preview',
@@ -76,7 +76,7 @@ export const useGenerateCharacterPixarPortrait = (
       return openai.images
         .generate({
           model: 'dall-e-3',
-          prompt: `As a 3D Pixar animated film : ${description.current}`,
+          prompt: `In a Disney/Pixar style : ${description.current}`,
         })
         .then((response) => {
           const imageUrl = response.data[0].url;
