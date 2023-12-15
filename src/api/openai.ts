@@ -76,7 +76,7 @@ export const useGenerateCharacterPixarPortrait = (
       return openai.images
         .generate({
           model: 'dall-e-3',
-          prompt: `In a Disney/Pixar style : ${description.current}`,
+          prompt: `In a 3D Disney/Pixar style : ${description.current}`,
         })
         .then((response) => {
           const imageUrl = response.data[0].url;
