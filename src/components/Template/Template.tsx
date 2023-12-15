@@ -9,6 +9,8 @@ const Template = () => {
   const isHome = !!useMatch('/');
   const location = useLocation();
 
+  console.log('pathname', location.pathname);
+
   return (
     <TemplateContainer>
       <ThroneImg src={Throne} alt="A pop representation of the Iron Throne" show={isHome} />

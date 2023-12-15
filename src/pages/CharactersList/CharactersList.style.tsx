@@ -48,3 +48,28 @@ export const Title = styled.div`
   text-align: center;
   padding: 3rem 0;
 `;
+
+export const SearchField = styled.input`
+  width: calc(100% - 2rem);
+  max-width: 500px;
+  font-size: 1.2rem;
+  font-family: 'Concert One', sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.02rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 10rem;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto;
+  display: block;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  &::placeholder {
+    color: white;
+  }
+`;

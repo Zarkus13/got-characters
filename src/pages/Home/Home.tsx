@@ -12,7 +12,7 @@ const Home = () => {
       <HomeTitle>Game of Thrones Characters</HomeTitle>
       <SiteDescription>
         Welcome ! Come and extend your knowledge of Game of Thrones characters thanks to{' '}
-        <a href="https://anapioficeandfire.com/">An API of Ice and Fire</a> <br />
+        <a href="https://thronesapi.com/">Thrones API</a> <br />
         <small>(and a little bit of ChatGPT and DallE 3)</small>
       </SiteDescription>
       <Link to="/characters">Go to characters list !</Link>
